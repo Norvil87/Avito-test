@@ -23,7 +23,7 @@ let form = modal.querySelector('.modal__form');
 let modalButton = modal.querySelector('.modal__button');
 let commentField = form.querySelector('#comment');
 let nameField = form.querySelector('#name');
-let commentTemplate = document.querySelector('#comment').content.querySelector('.modal__chat-message-container');
+let commentTemplate = document.querySelector('#comment-template').content.querySelector('.modal__chat-message-container');
 let currentImage;
 
 // Проверяет, произошла ли ошибка при ответе с сервера
