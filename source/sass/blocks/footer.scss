@@ -1,0 +1,36 @@
+.footer {
+  min-height: 56px;
+}
+
+.footer .centrifier {
+  border-top: 1px solid #cccccc;
+
+  max-width: 728px;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #cccccc;
+}
+
+@media (max-width: 766px) {
+  .footer .centrifier {
+    width: 87.5%;
+
+  }
+}

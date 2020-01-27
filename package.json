@@ -1,0 +1,20 @@
+{
+  "name": "noname",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.x"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "engines": {
+    "node": "8.15"
+  }
+}

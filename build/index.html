@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="тест авито">
+    <meta name="description" content="Тестовое задание авито">
+  <title>Тест Авито</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="centrifier">
+        <h1>TEST APP</h1>
+      </div>
+    </header>
+    <main class="content">
+      <div class="centrifier">
+        <section class="gallery">
+          <ul class="gallery__list">
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="centrifier">
+      <p>© 2018-2019</p>
+    </div>
+  </footer>
+
+
+  <template id="modal">
+      <div class="modal">
+        <div class="modal__content">
+          <div class="modal__image-container"></div>
+          <form class="modal__form" enctype="multipart/form-data" autocomplete="off">
+            <div class="modal__form-input-container">
+              <input id="name" name="name" type="text" minlength="2" maxlength="25" placeholder="Ваше имя" required="">
+              <label for="name" class="visually-hidden">Имя пользователя</label>
+            </div>
+            <div class="modal__form-input-container">
+              <input id="comment" name="comment" type="text" minlength="1" placeholder="Ваш комментарий" required="">
+              <label for="comment" class="visually-hidden">Комментарий пользователя</label>
+            </div>
+            <button class="modal__form-button" type="submit">Оставить комментарий</button>
+          </form>
+          <div class="modal__chat">
+          </div>
+          <button class="modal__button" type="button">Закрыть окно</button>
+        </div>
+      </div>
+  </template>
+
+  <template id="comment">
+    <div class="modal__chat-message-container">
+      <p class="modal__chat-message-date">18.12.2019</p>
+      <p class="modal__chat-message-content">Я тут был, очень понравилось</p>
+    </div>
+  </template>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
