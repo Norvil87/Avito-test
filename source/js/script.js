@@ -194,7 +194,6 @@ function onModalRender(data) {
   renderComments(data.comments, chat);
 }
 
-
 // Выводит на экран модальное окно
 function renderModal(image) {
   load(`${URL}/${image.id}`, onModalRender, onLoadError);
@@ -254,7 +253,7 @@ nameField.addEventListener('change', function() {
   }
 })
 
-commentField.addEventListener('change', function() {
+commentField.addEventListener('invalid', function() {
   if (commentField.validity.valueMissing) {
     commentField.setCustomValidity('А сообщение?');
   } else {
